@@ -3,15 +3,10 @@ Quick demo of routing ingress traffic between two cluster ip services utilizing 
 
 ## Install
 
+From the root of this repo...
+
 ``` bash
-cd hipster
 kubectl apply -k .
-
-cd ..\sock-shop
-kubectl apply -k .
-
-cd ..\nginx
-kubectl apply -f nginx-ns.yaml
 
 helm repo add nginx-stable https://helm.nginx.com/stable
 helm repo update
